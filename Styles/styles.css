@@ -1,0 +1,808 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+    background: #243330;
+    /* background: url("../media/images/aromatherapy-bg.png"), */
+    /* #243330; */
+      background-blend-mode:screen;
+    /* background-repeat:repeat;
+    background-size:cover; */ 
+    /* opacity: 0.8; Adjust for intensity */
+    /* background-image: url("../media/images/aromatherapy-bg.png"); */
+}
+.exit svg{
+    height: 4em;
+    fill: yellow;
+}
+.nav-container{
+    width:100%;
+    min-height:100vh;
+    background: url("../media/images/aromatherapy-bg.png"),
+    url('../media/images/aromatherapy-slider-pic1.png'),
+    #243330 ;
+    justify-content: center;
+    flex-direction: column;
+    background-position:top,right;
+    background-repeat:no-repeat;
+    background-size:cover,40em;
+    background-blend-mode:screen,normal;
+}
+/* .nav-bar */
+.logo1{
+    width:12em;
+}
+.main-nav{
+    display: flex;
+    align-items: center;
+    padding: 2em;
+}
+.nav-links{
+    display: flex;
+    margin: 0 auto;
+    gap: 20px;
+}
+.nav-links li{
+    text-decoration: none;
+    list-style: none;
+}
+a{
+    align-content: center;
+    text-decoration: none;
+    color: white;
+    font-family: "Tenor Sans", serif;
+}
+.nav-links a:hover{
+    color:#f0d257;
+}
+ .active{
+    color: #ffe88a;
+ }
+ .btn{
+    display:flex;
+    align-items: center;
+    background-color: black;
+    padding: 1em;
+    border-radius: 3em;
+    font-family: "Tenor Sans", serif;
+}
+.btn:hover{
+
+    background-color: rgb(238, 116, 116);
+
+}
+.btn1{
+        background-color: rgb(242, 145, 145);
+        font-family: "Tenor Sans";
+        color:rgb(255, 255, 255);
+        font-weight: 400;
+        font-size: 1em;
+        border-radius: 25px;
+        opacity: 1;
+        padding: 1em;
+}
+.btn1:hover{
+    background-color: rgb(238, 116, 116);
+
+}
+.btn2{
+        background-color: rgb(67, 89, 86);
+        font-family: "Tenor Sans";
+        color: rgb(255, 255, 255);
+        font-weight: 400;
+        font-size: 1em;
+        border-radius: 25px;
+        padding: 1em;
+    }
+    .btn2:hover{
+        background-color: rgb(101, 112, 110);
+
+    }
+    .list{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 90vh;
+        padding-left: 3em;
+        
+    }
+    .list h1{
+    font-family: "Tenor Sans", serif;
+    font-size: 3.5em;
+    width: 10em;
+        color: rgba(255, 255, 255, 0.763);
+
+    }
+    .list li{
+        list-style: none;
+    }
+    .listed{
+        padding-top: 1.5em;
+
+    }
+    .nav-links-two{
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 20em;
+        z-index: 999;
+        background-color:#ffffff6a;
+        box-shadow: -10px 0 10px rgba(0, 0, 0, 0.25);
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .nav-links-two li{
+    text-decoration: none;
+    list-style: none;
+}
+    .listed div{
+        display: flex;
+        align-items: center;
+
+
+    }
+    .listed p{
+        padding-bottom: 1em;
+        color: rgba(255, 255, 255, 0.582);
+    font-family: "Tenor Sans", serif;
+
+
+    }
+    .listed img{
+        padding-bottom: 1em;
+    }
+    .buttons{
+        display: flex;
+        align-items: flex-start;
+        padding-top: 2em;
+        gap: 20px;
+    }
+    .wrapper{
+        background-image: url("../media/images/aromatherapy-footerbg\ \(2\).png");
+        background-size:85em;
+        background-repeat: no-repeat;
+        background-position:center;  
+    }
+    .contents{
+        display: flex;
+    } 
+   .hamburger{
+        display: none;
+    }
+    .hamburger {
+  display: none;
+}
+.nav-links {
+  display: flex;
+}
+.nav-links-two {
+  display: none;
+}
+
+   #svgs{
+    margin-left: 2em;
+   }
+   p{
+    margin-left:3em ;
+    color: #f0d257;
+   }
+   #svg {
+    margin-left: 20em;
+    z-index: 18;
+    background-color: rgb(45, 64, 61);
+    font-family: Roboto;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    white-space: normal;
+    width: 19px;
+    height: 19px;
+    min-height: 0px;
+    min-width: 0px;
+    max-height: none;
+    max-width: none;
+    text-align: center;
+    line-height: 19px;
+    letter-spacing: 0px;
+    font-weight: 400;
+    font-size: 8px;
+    border-color: rgb(67, 89, 86);
+    border-style: solid;
+    border-width: 0px;
+    border-radius: 40px;
+    transform-origin: 50% 50%;
+    opacity: 1;
+    transform: translate(0px, 0px);
+    visibility: visible;
+}
+.wrapper2{
+    background: #243330 url("../media/images/aromatherapy-bg.png");
+    background-blend-mode: screen;
+    height: 120vh;
+    padding-top:1em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.wrapper2 h1 {
+    color:#ffe88a;
+    font-size:4em;
+   font-family: "Tenor Sans";
+    font-weight: 400;
+    line-height:1.5em;
+    /* display: flex; */
+    /* justify-content: flex-start; */
+    margin-left: 2em;
+    /* margin-top: 1em; */
+    max-width:15em;
+}
+.borders{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+.border1{
+    padding: 40px 40px 25px;
+    /* align-items: center; */
+    border: 1px solid #435956;
+    border-radius: 8px;
+    max-width:70vh;
+    height:auto;
+}
+.border2{
+    padding: 40px 40px 25px;
+    /* align-items: center; */
+    border: 1px solid #435956;
+    border-radius: 8px;
+    max-width:70vh;
+    height:auto;
+
+}
+.border3{
+    padding: 40px 40px 25px;
+    /* align-items: center; */
+    border: 1px solid #435956;
+    border-radius: 8px;
+    max-width:70vh;
+    height:auto;
+}
+.border-img{
+    width: 3em;
+    margin-bottom:1em;
+ 
+}
+.wrapper2 h4{
+    font-size: 1.8em;
+    color: #ffffff;
+    font-weight: 400;
+    margin-bottom:1em;
+    }
+    .wrapper2 p{
+        margin: 0;
+        width: 15em;
+        color: rgba(144, 166, 162, 0.614);
+        line-height: 2em;
+    }
+.under-img{
+    display:flex;
+    justify-content: center;
+    margin-bottom:3em;
+}
+.under-img1{
+    margin-right: 1.5em;
+}
+.under-img2{
+    margin-right:1em;
+}
+.btn3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    background-color: #f29191;
+    border-color: transparent;
+    width: 10em;
+    margin:0 auto;
+    border-radius: 25px;
+    padding:0.8em;
+}
+.btn3:hover{
+    background-color: rgb(238, 116, 116);
+}
+.wrapper3{
+    /* background-color: rgba(144, 166, 162, 0.062); */
+    /* background:#243330; */
+    background-blend-mode: screen;
+    padding-top: 2em;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); Optional: Add depth */
+    /* opacity: 0.8; Adjust for intensity */
+
+}
+.inner-wraper{
+    /* background-color:#243330; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    min-height: 100vh;
+    padding-top:5em;
+    /* border-radius: 10em; */
+}
+.first img{
+    width:80vh;
+}
+.second{
+    width: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:right;
+    /* align-items:flex-start; */
+}
+.second h3{
+    width: 10em;
+    font-size: 3.5em;
+    color: #ffe88a;
+    font-family: "Tenor Sans";
+    line-height: 1em;
+    font-weight: 300;
+    margin-top:0;
+}
+.second p{
+    width: 30em;
+    color: rgba(144, 166, 162, 0.614);
+    margin-left: 0;
+    padding-top: 1em;
+    line-height: 2em;
+    letter-spacing:1px;
+    margin-bottom: 2em;
+}
+.btn4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    background-color: #f29191;
+    border-color: transparent;
+    width: 13em;
+    border-radius: 25px;
+    padding:1em;
+    white-space: nowrap;
+}
+.btn4:hover{
+    background-color: rgb(238, 116, 116);
+}
+.wrapper4{
+    width: 100%;
+    min-height: 100vh;
+    /* background-color: #; */
+    background: url("../media/images/aromatherapy-sectionbg1.png")
+    rgba(144, 166, 162, 0.062);
+    ;
+    background-repeat: repeat-x;
+    background-position: center bottom;
+    border-radius:5px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    gap: 2em;
+}
+.inner-img1{
+    margin-top: 7em;
+    width:40%;
+    min-height: 70vh;
+    background-image: url("../media/images/aromatherapy-home-pic2.jpg");
+    background-size:contain;
+    background-repeat:no-repeat;
+    padding: 100px 5% 85px;
+    border-radius: 8px;
+    /* background-position: center; */
+}
+.inner-img2{
+    margin-top: 7em;
+    width:40%;
+    min-height: 70vh;
+    background-image: url("../media/images/aromatherapy-home-pic3.jpg");
+    background-size:contain;
+    background-repeat: no-repeat;
+    padding: 100px 5% 85px;
+    border-radius: 8px;
+    /* background-position: center; */
+}
+.wrapper4 h1{
+    color: #fff;
+    font-size: 2.7em;
+    font-family: "Manrope", serif;
+    white-space: nowrap;
+    font-weight: 400;
+    line-height: 1em;
+    padding-bottom:0.5em;
+    /* letter-spacing: 0.1em; */
+}
+.span{
+    color: #ffe88a;
+    font-family: "Manrope", serif;
+    font-size: 2.3em;
+    padding-bottom:0.5em;
+}
+.btn5{
+    text-align: center;
+    color: #ffffff;
+    background-color: #f29191;
+    border-color: transparent;
+    width: 10em;
+    border-radius: 25px;
+    padding:1em;
+    white-space: nowrap;
+    margin: 0 auto;
+}
+.btn5:hover{
+    background-color: rgb(238, 116, 116);
+}
+.wrapper5{
+    /* background-color: #fff; */
+    width:100%;
+    min-height: 100vh;
+}
+.wrapper-img{
+    width: 100px;
+    /* height: auto; */
+    margin: 0 auto;
+
+}
+.profile{
+    width: 100px;
+    height:10em;
+    border-radius:100px 50px 80px 60px;
+}
+.slide1 p {
+    padding-top:40px;
+    padding-left:40px;
+   margin: 0 auto;
+   text-align:center;
+   color:#ffffff;
+   /* white-space:wrap; */
+   line-height: 1.5em;
+   letter-spacing:1px;
+   /* font-family: "Tenor Sans", serif; */
+   font-family: "Tenor Sans", Helvetica, Arial, sans-serif;
+   font-size: 1em;
+   /* padding: 2em; */
+   margin: 20 20 35px 25px;
+}
+.three-dots{
+    /* margin: 0 auto; */
+    margin-top:1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.lorem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h6{
+    letter-spacing: 1px;
+    line-height: 17px;
+   font-family: "Tenor Sans", Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    color: #ffe88a;
+    padding-bottom:10em;
+}
+.tail1 svg{
+    color:#f29191;
+}
+
+.textss{
+    /* padding: 50px; */
+    background-image: url("../media/images/quote.svg");
+    background-repeat: no-repeat;
+    background-size: 5em;
+    background-position:top left;
+    /* background-blend-mode: screen; */
+    opacity: 0.5;
+     /* transform: scaleY(-1); */
+    
+}
+.slide1{
+    display: flex;
+    flex-direction: column;
+    /* margin: 0 auto; */
+    justify-content: center;
+    align-items: center;
+    background:url("../media/images/textline.png") #161e1c13;
+    background-repeat:repeat-y, no-repeat;
+    background-position:center,top;
+    background-size: 40em 2em;
+    min-height: 30vh;
+    opacity: 0.9;
+    width: 55em;
+    /* padding: 50px; */
+    /* width: 50%; */
+}
+.liner{
+    background-image: url("../media/images/aromatherapy-footerbg\ \(2\).png");
+    background-size:85em;
+        background-repeat: no-repeat;
+        background-position:top; 
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        text-align:left;
+        gap: 3em;
+        padding-top: 5em;
+}
+.desc-list{
+    padding-top: 20px;
+    color: #ffffff;
+    /* color: rgba(144, 166, 162, 0.614); */
+    width: 20em;
+    font-family: "Tenor Sans", Helvetica, Arial, sans-serif;
+    line-height: 30px;
+}
+.head{
+    font-family: "Tenor Sans", Helvetica, Arial, sans-serif;
+    font-size: 1.5em;
+    line-height: 30px;
+}
+.dd{
+    color: rgba(144, 166, 162, 0.614);
+    padding-bottom: 1em;
+}
+#dd-svg{
+    margin: 0;
+}
+dt  li{
+    padding: 0;
+}
+.tail{
+    padding-top: 2em;
+}
+.tails{
+    padding-top: 2em;
+}
+.tail1{
+    padding-top: 1.5em;
+    font-size:1.5em;
+    color: #ffe88a;
+}
+dt li{
+    color: #ccd5d3;
+}
+.bookmarks{
+    float: right;
+   padding-right: 20px;
+
+}
+/* aboutus stylings */
+.about-us-heading{
+    /* font-size: ; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3em;
+    width: 100%;
+}
+.about-us-heading h1 {
+    font-size: 5rem;
+    color: #ffffff;
+        line-height: 80px;
+        font-weight: 400;
+        letter-spacing: 0px;
+    font-family: "Tenor Sans", Helvetica, Arial, sans-serif;
+}
+.counting{
+    padding-top: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content:space-evenly;
+    /* gap: 10px; */
+}
+.random-number{
+  font-family:"Tenor Sans", Helvetica, Arial, sans-serif;
+  margin-left: 0;
+  color: #ffffff;
+  font-size: 3em;
+  font-weight: 400;
+  padding-bottom:5px;
+}
+.counting h2{
+    color:#ffffff;
+    font-size: 1.5em;
+    font-weight: 400;
+  font-family:"Tenor Sans", Helvetica, Arial, sans-serif;
+    /* padding-top: 2em; */
+  padding-bottom:0.5em;
+}
+.count1{
+    padding: 5em;
+}
+.count2{
+    padding: 5em;
+}
+.count3{
+    padding: 5em;
+}
+.count4{
+    padding: 5em;
+}
+.aboutme-span{
+    margin: 0 0 15px;
+    color: rgba(144, 166, 162, 0.614);
+  font-family:"Tenor Sans", Helvetica, Arial, sans-serif;
+text-align: justify;
+line-height: 1em;
+letter-spacing:1px;
+    /* font-family: "Manrope", Helvetica, Arial, sans-serif; */
+}
+.dontain{
+    display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+/* padding: 2em; */
+gap: 5em;
+}
+.weird1 p{
+    margin-left: 0;
+    color: #829995;
+    /* font-family:"Tenor Sans", Helvetica, Arial, sans-serif; */
+    font-family: "Manrope", Helvetica, Arial, sans-serif;
+    letter-spacing: 1px;
+}
+.weird1{
+    height: 100vh;
+    width: 80vh;
+    margin-left:5em;
+
+}
+.p2{
+    margin-top:1.5em;
+}
+.weird1 h1{
+    color: #ffe88a;
+    font-family:"Tenor Sans", Helvetica, Arial, sans-serif;
+    line-height: 58px;
+    font-weight: 400;
+    font-size: 2.5rem;
+    
+}
+.weird2{
+    background-image: url('../media/images/aromatherapy-about-pic1.png');
+    background-size: contain;
+    height: 100vh;
+    background-repeat: no-repeat;
+    width: 50%;
+}
+.contain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contain h1{
+    color: #ffe88a;
+    font-family:"Tenor Sans", Helvetica, Arial, sans-serif;
+    font-size: 3em;
+    font-weight: 400;
+}
+.contain p{
+    width: 50%;
+    margin-left: 0;
+    color: #829995;
+    font-family:"Tenor Sans", Helvetica, Arial, sans-serif;
+    line-height: 20px;
+    font-weight: 400;
+    font-size: 1.1rem;
+    text-align: center;
+}
+ .wrap{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 0 auto;
+   height:100vh; 
+   width: 100%;
+} 
+.wrapping{
+     background-image: url("../media/images/aromatherapy-home-pic3.jpg");
+     height:25em; 
+     background-repeat:no-repeat;
+     background-size:cover;
+     background-position:center;
+     width: 75%;
+     display: flex;
+     flex-flow: column wrap;
+     justify-content: center;
+     align-items: center;
+}
+.wrapping h1{
+    color: #fff;
+    font-size: 3em;
+    font-family: "Manrope", serif;
+    white-space: nowrap;
+    font-weight: 400;
+    line-height: 1em;
+    padding-top:2em;
+    /* letter-spacing: 0.1em; */
+}
+.spann{
+    color: #ffe88a;
+    font-family: "Manrope", serif;
+    font-size: 2.5em;
+    padding-bottom:1em;
+    display: flex;
+    justify-content: center;
+    /* margin-bottom: 1em; */
+
+}
+.btn55{
+    text-align: center;
+    color: #ffffff;
+    background-color: #f29191;
+    border-color: transparent;
+    width: 10em;
+    border-radius: 25px;
+    padding:1em;
+    white-space: wrap;
+    margin: 0 auto;
+   
+    /* align-items: center; */
+}
+.btn5:hover{
+    background-color: rgb(238, 116, 116);
+}
+@media(max-width:529px) {
+@media (max-width: 529px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links-two {
+    display: none; /* stays hidden until `.active` is added */
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 20em;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 999;
+    transition: right 0.5s ease;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .nav-links-two.active {
+    right: 0;
+    display: flex;
+  }
+}
+
+
+  
+}
+
+
+.wrapper h1{
+    font-family: "Tenor Sans", Helvetica, Arial, sans-serif;
+color: #ffffff;
+font-weight: 400;
+}
